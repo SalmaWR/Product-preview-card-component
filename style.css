@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+
+    background-color:  hsl(30, 38%, 92%);
+    margin: auto;
+    min-height: 100vh;
+}
+
+.continer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 190px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+main {
+background-color: hsl(0, 0%, 100%);
+height: 390px;
+width: 260px;
+text-align: left;
+padding:20px;
+border-top-right-radius: .5rem;
+border-bottom-right-radius: .5rem;
+}
+
+.Perfume {
+    height: 390px;
+    width: 260px;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+h2 {
+
+    font-family: 'Montsterrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 7px;
+    margin-bottom: 25px;
+}
+
+
+h1 {
+
+    font-family:'Fraunces', sans-serif;
+    line-height: 30px; 
+    font-weight: 700px;                            ;
+    margin-bottom: 20px;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700px;
+    line-height: 22px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 10px;
+}
+
+h3 {
+    display: flex;
+    font-size: 11px;
+    font-weight: 500;
+    font-family:'Fraunces', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-left: 15px;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    font-family:'Fraunces', sans-serif;
+    font-weight: 700;
+    color:hsl(158, 36%, 37%);
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 13px;
+    border-radius: .5rem;
+    border: none;
+    margin: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+button:hover{
+    background-color: hsl(156, 42%, 18%);
+}
+.cart{
+    padding-right: 5px;
+    height: 10px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    main {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+    .Perfume {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    button {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+}
